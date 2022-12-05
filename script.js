@@ -1,26 +1,24 @@
-// write a function for even odd
+// write a function that tell us about negative and positive value
 
-function even_odd(){
-    // now get the ids from input field
+function pos_neg(){
+    // now get id from input number field
     var number = document.getElementById("no").value;
-
-    // now check first if value is given or not
+    // check if value is given or not
     if(number == ""){
-        // then print message in result box
+        // print message in result box
         document.getElementById("result").innerText
-        = "Please provide number";
-        return false;
+        = "Please enter value";
     }
     else{
-        // now apply condition for even odd
-        if(number % 2 == 0){
+        // now here apply condition for positive and negative
+        // value
+        if(number > 0 ){
             document.getElementById("result").innerText
-        = number + " is even number";
-        } 
+        = number + " is Positive number";
+        }
         else{
             document.getElementById("result").innerText
-        = number + " is odd number";
+        = number + " is Negative number";
         }
     }
 }
-
